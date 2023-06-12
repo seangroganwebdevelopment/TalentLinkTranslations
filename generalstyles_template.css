@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid lime !important; */
+     */
 }
 
 img {
@@ -36,11 +36,17 @@ body {
     :root {
 
         /* COLOUR PALETTE:  */
-        --COLOR-ONE: #FFA500;
-        --COLOR-TWO: #C8C8C8;
-        --COLOR-THREE: #808080;
-        --COLOR-FOUR: #fff;
-        --COLOR-FIVE: #000;
+        --COLOR-ONE: #f07575;
+        --COLOR-TWO: #ecc2c2;
+        --COLOR-THREE: #f5d5d5;
+        --COLOR-FOUR: #eca3a3;
+        --COLOR-FIVE: #f7b3b3;
+        --COLOR-SIX: #571b1b;
+        --COLOR-SEVEN: #333;
+        
+
+        --COLOR-TEXT: #000;
+        --COLOR-TEXT2: #fff;
     
         /* FONT FAMILIES */
     

@@ -1,6 +1,6 @@
 /* Header styles */
 header {
-    background-color: #f07575;
+    background-color: var(--COLOR-ONE)      ;
     color: #fff;
     padding: 20px;
     height: 100px;
@@ -42,7 +42,15 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #000;
+    color: var(--COLOR-TEXT);
+}
+
+#colorButton {
+    padding: 1px; 
+    margin-left: 12px; 
+    background-color: #ecc2c2;
+    border: none; 
+    border-radius: 8px; 
 }
 
 
@@ -78,12 +86,12 @@ ul li a {
 /* About section styles */
 .about {
     padding: 40px;
-    background-color: #f5d5d5;
+    background-color: var(--COLOR-THREE);
 }
 
 /* Main services section styles */
 .services {
-    background-color: #eca3a3;
+    background-color: var(--COLOR-FOUR);
     padding: 40px;
 }
 
@@ -99,7 +107,7 @@ ul li a {
 
 .card {
     width: 30%;
-    background-color:  #f7b3b3;;
+    background-color:  var(--COLOR-FIVE);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -127,15 +135,15 @@ ul li a {
 
 /* Contact section styles */
 .contact {
-    background-color: #571b1b;
-    color: #fff;
+    background-color: var(--COLOR-SIX);
+    color: var(--COLOR-TEXT2);
     padding: 40px;
     text-align: center;
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: var(--COLOR-SEVEN);
     color: #fff;
     padding: 20px;
     text-align: center;
