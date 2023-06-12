@@ -1,0 +1,52 @@
+@import url();
+
+/* --------------RESEt-------------- */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid lime !important; */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit; 
+}
+
+/* || VArIABLES */
+
+
+
+    :root {
+
+        /* COLOUR PALETTE:  */
+        --COLOR-ONE: #FFA500;
+        --COLOR-TWO: #C8C8C8;
+        --COLOR-THREE: #808080;
+        --COLOR-FOUR: #fff;
+        --COLOR-FIVE: #000;
+    
+        /* FONT FAMILIES */
+    
+        --FONT-FAMILY-TITLE: Cambria, serif;
+        --FONT-FAMILY-H1: Cambria, serif;
+        --FONT-FAMILY-TEXT: Roboto, serif;
+    
+    }
+
+
+
+  /* || UTILITY CLASSES */
+
+
+/* ------------------------ */

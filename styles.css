@@ -1,0 +1,73 @@
+
+
+
+  /* Reset some default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('path/to/your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* About section styles */
+.about {
+    padding: 40px;
+}
+
+/* Main services section styles */
+.services {
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.services h2 {
+    margin-top: 0;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
