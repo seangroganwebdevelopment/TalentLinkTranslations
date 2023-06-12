@@ -48,10 +48,13 @@ ul li a {
 #colorButton {
     padding: 1px; 
     margin-left: 12px; 
-    background-color: #ecc2c2;
+    background-color: var(--COLOR-TWO);
     border: none; 
     border-radius: 8px; 
 }
+
+
+  
 
 
 /* Hero section styles */

@@ -41,12 +41,22 @@ body {
         --COLOR-THREE: #f5d5d5;
         --COLOR-FOUR: #eca3a3;
         --COLOR-FIVE: #f7b3b3;
-        --COLOR-SIX: #571b1b;
+        --COLOR-SIX: #833434;
         --COLOR-SEVEN: #333;
         
 
         --COLOR-TEXT: #000;
         --COLOR-TEXT2: #fff;
+
+        .dark-mode {
+            --COLOR-ONE: #5a99e2;
+            --COLOR-TWO: #97cceb;
+            --COLOR-THREE: #f5d5f0;
+            --COLOR-FOUR: #a3cbec;
+            --COLOR-FIVE: #d2f7b3;
+            --COLOR-SIX: #b061f1;
+            --COLOR-SEVEN: #333333;
+          }
     
         /* FONT FAMILIES */
     
@@ -61,4 +71,3 @@ body {
   /* || UTILITY CLASSES */
 
 
-/* ------------------------ */
