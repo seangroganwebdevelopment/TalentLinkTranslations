@@ -1,6 +1,6 @@
 /* Header styles */
 header {
-    background-color: var(--COLOR-ONE)      ;
+    background-color: var(--COLOR-ONE);
     color: #fff;
     padding: 20px;
     height: 100px;
@@ -46,15 +46,16 @@ ul li a {
 }
 
 #colorButton {
-    padding: 1px; 
-    margin-left: 12px; 
+    padding: 1px;
+    margin-left: 12px;
     background-color: var(--COLOR-TWO);
-    border: none; 
-    border-radius: 8px; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 
-  
+
 
 
 /* Hero section styles */
@@ -65,7 +66,7 @@ ul li a {
 
     background-size: cover;
     background-position: center;
-    color: #ecc2c2;
+    color: var(--COLOR-TWO);
     text-align: center;
     padding: 100px 0;
 
@@ -82,17 +83,19 @@ ul li a {
 
 @media (max-width: 768px) {
     .hero {
-      height: 50vh;
+        height: 50vh;
     }
-  }
+}
 
 /* About section styles */
+
 .about {
     padding: 40px;
     background-color: var(--COLOR-THREE);
 }
 
 /* Main services section styles */
+
 .services {
     background-color: var(--COLOR-FOUR);
     padding: 40px;
@@ -102,6 +105,8 @@ ul li a {
     margin-top: 0;
 }
 
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -110,10 +115,15 @@ ul li a {
 
 .card {
     width: 30%;
-    background-color:  var(--COLOR-FIVE);
+    background-color: var(--COLOR-FIVE);
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+
 
 @media (max-width: 768px) {
     .card {
@@ -125,8 +135,9 @@ ul li a {
 
 
 /* Rates section styles */
+
 .rates {
-    background-color: #eecece;
+    background-color: var(--COLOR-ONE);
     padding: 40px;
 }
 
