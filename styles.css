@@ -1,6 +1,6 @@
 /* Header styles */
 header {
-    background-color: #f18f8f;
+    background-color: #f07575;
     color: #fff;
     padding: 20px;
     height: 100px;
@@ -10,7 +10,7 @@ header {
 
 .logo {
     font-size: 44px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
@@ -24,37 +24,44 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  ul {
+}
+
+ul {
     display: flex;
     list-style: none;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin-left: 15px;
-  }
-  
-  ul li a {
+}
+
+ul li a {
     text-decoration: none;
     color: #000;
-  }
-  
+}
+
 
 /* Hero section styles */
 
 .hero {
-    background-image: url('path/to/your-image.jpg');
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('images/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg');
+
     background-size: cover;
     background-position: center;
-    color: #e7bebe;
+    color: #ecc2c2;
     text-align: center;
     padding: 100px 0;
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
@@ -62,23 +69,53 @@ nav {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+  }
+
 /* About section styles */
 .about {
     padding: 40px;
+    background-color: #f5d5d5;
 }
 
 /* Main services section styles */
 .services {
-    background-color: #f7f7f7;
+    background-color: #eca3a3;
     padding: 40px;
 }
 
 .services h2 {
     margin-top: 0;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    background-color:  #f7b3b3;;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+
+
 /* Rates section styles */
 .rates {
-    background-color: #f7f7f7;
+    background-color: #eecece;
     padding: 40px;
 }
 
@@ -86,9 +123,11 @@ nav {
     margin-top: 0;
 }
 
+
+
 /* Contact section styles */
 .contact {
-    background-color: #333;
+    background-color: #571b1b;
     color: #fff;
     padding: 40px;
     text-align: center;
