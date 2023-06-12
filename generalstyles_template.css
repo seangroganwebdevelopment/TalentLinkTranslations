@@ -23,6 +23,12 @@ textarea {
     font: inherit; 
 }
 
+/* Global styles */
+body {
+    font-family: Calibri, sans-serif;
+    line-height: 1.5;
+}
+
 /* || VArIABLES */
 
 

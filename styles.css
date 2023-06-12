@@ -1,28 +1,19 @@
 
 
 
-  /* Reset some default styles */
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-}
+
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #f18f8f;
     color: #fff;
     padding: 20px;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 44px;
+    font-family: cursive;
     font-weight: bold;
 }
 
