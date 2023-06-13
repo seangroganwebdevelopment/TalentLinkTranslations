@@ -28,17 +28,16 @@ nav {
 }
 
 
-
 ul {
     display: flex;
     list-style: none;
     margin-left: auto;
-    padding: 15px; 
+    padding: 15px;
     align-items: center;
 }
 
 ul li {
-    margin-left: 15px;  
+    margin-left: 15px;
 }
 
 ul li a {
@@ -46,8 +45,8 @@ ul li a {
     color: var(--COLOR-TEXT);
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    */
     font-size: 1.1rem;
-    padding: 15px; 
-    font-family: Roboto, sans-serif; 
+    padding: 10px;
+    font-family: Roboto, sans-serif;
 }
 
 #colorButton {
@@ -57,9 +56,135 @@ ul li a {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: Roboto, sans-serif; 
+    font-family: Roboto, sans-serif;
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    */
 }
+
+
+@media (max-width: 768px) {
+    header {
+        height: 160px;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    ul li a {
+        padding: 15px;
+    }
+
+    .hamburger-container {
+        display: none
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .logo-container {
+        order: 1;
+        margin-left: 12px;
+        /* Move logo container to the left */
+    }
+
+    .hamburger-container {
+        display: block;
+        order: 3;
+        margin-right: 12px;
+        /* Move hamburger container to the right */
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+        background-color: var(--COLOR-FIVE);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .hamburger-icon {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+
+    .hamburger-icon:before,
+    .hamburger-icon:after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger-icon:before {
+        top: -6px;
+    }
+
+    .hamburger-icon:after {
+        top: 6px;
+    }
+
+    .show .hamburger-icon {
+        background-color: transparent;
+    }
+
+    .show .hamburger-icon:before {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .show .hamburger-icon:after {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+
 
 
 /* Hero section styles */
@@ -86,7 +211,7 @@ ul li a {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
     /* background-color: var(--COLOR-FOUR);
     opacity: 0.8;  */
-    padding: 10px; 
+    padding: 10px;
     border-radius: 0.8rem;
 }
 
@@ -101,10 +226,10 @@ ul li a {
 .about {
     padding: 40px;
     background-color: var(--COLOR-THREE);
-  }
+}
 
 .about h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -118,7 +243,7 @@ ul li a {
 
 .services h2 {
     margin-top: 0;
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -161,7 +286,7 @@ ul li a {
 
 .rates h2 {
     margin-top: 0;
-    font-size: 2rem; 
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -180,23 +305,24 @@ form {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    flex-wrap: wrap; 
-  }
-  
-  form input,
-  form textarea,
-  form button {
+    flex-wrap: wrap;
+}
+
+form input,
+form textarea,
+form button {
     align-self: flex-start;
     margin-bottom: 10px;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
+
     form input,
     form textarea,
     form button {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 /* Footer styles */
 footer {
