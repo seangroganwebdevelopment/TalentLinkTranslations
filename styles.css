@@ -74,18 +74,27 @@ body {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    
 }
 
 /* Style the links inside the navigation bar */
 
+#logo {
+    background-color: var(--COLOR-THREE);
+    font-family: cursive; 
+    font-size: 1.4rem;
+}
+
 #colorButton {
-    border-radius: 10px; 
+    /* border-radius: 10px;  */
     background-color: var(--COLOR-ONE);
+    color: var(--COLOR-SEVEN)
+    /* padding: 2px;  */
 }
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--COLOR-FOUR);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -94,13 +103,13 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: var(--COLOR-TWO);
     color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: var(--COLOR-SIX);
     color: white;
 }
 
