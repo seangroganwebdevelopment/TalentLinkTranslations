@@ -173,7 +173,7 @@ body {
 .hero h1 {
     color: var(--COLOR-ONE);
     font-size: 65px;
-    font-family: Roboto, sans-serif
+    font-family: Roboto, sans-serif;
     margin: 0;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
     /* background-color: var(--COLOR-FOUR);
