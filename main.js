@@ -8,19 +8,15 @@ colorButton.addEventListener('click', () => {
 
 // hamburger menu 
 
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', function() {
-  menu.classList.toggle('show');
-});
-
-const menuItems = menu.querySelectorAll('a');
-menuItems.forEach(function(item) {
-  item.addEventListener('click', function() {
-    menu.classList.remove('show');
-  });
-});
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 
 
