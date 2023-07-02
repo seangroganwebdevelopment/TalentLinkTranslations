@@ -272,6 +272,7 @@ body {
 
     .about-wrapper {
         display: block;
+        /* why is this blocked? */
     }
 
 }
