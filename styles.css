@@ -71,8 +71,15 @@ body {
 
 /* || UTILITY CLASSES */
 /* Add a black background color to the top navigation */
+
+
+
+/* NAVBAR */
+
+
+
 .topnav {
-    background-color: #333;
+    background-color: var(--COLOR-TEXT);
     overflow: hidden;
 
 }
@@ -87,8 +94,8 @@ body {
 
 #colorButton {
     /* border-radius: 10px;  */
-    background-color: var(--COLOR-ONE);
-    color: var(--COLOR-SEVEN)
+    background-color: var(--COLOR-TWO);
+    color: var(--COLOR-ONE)
         /* padding: 2px;  */
 }
 
@@ -156,7 +163,7 @@ body {
 
 .hero {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('images/kari-shea-1SAnrIxw5OY-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5)), url('images/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg');
 
     background-size: cover;
     background-position: center;
@@ -213,21 +220,18 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .hero {
-        height: 50vh;
-    }
-}
 
-@media (max-width: 600px) {
+
+@media (min-width: 600px) {
     .hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5)), url('images/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg');
+
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)), url('images/kari-shea-1SAnrIxw5OY-unsplash.jpg');
 
     }
 
 
 }
-
 
 
 
@@ -239,39 +243,61 @@ body {
 }
 
 .about h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 4px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .divider {
     border: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 1px solid black;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
 
-.about-wrapper {
-    display: flex;
+.about p {
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
+
 
 .about-text {
-    width: 50%;
-    height: 19rem;
+    padding: 0.3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: left;
 }
 
+/* .about-text li {
+  text-decoration: none;
+} */
+
 .about-image {
-    width: 50%;
+    height: 12rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.5)), url('images/georgia-de-lotz-juQWcOiuuPE-unsplash.jpg');
+    opacity: 0.8;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
 
     .about-wrapper {
+        display: flex;
+    }
+
+    .about-image {
         display: block;
+        width: 100%;
         /* why is this blocked? */
     }
 
@@ -284,6 +310,7 @@ body {
 .services {
     background-color: var(--COLOR-FOUR);
     padding: 40px;
+    text-align: center;
 }
 
 .services h2 {
@@ -292,7 +319,6 @@ body {
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 
 .card-container {
